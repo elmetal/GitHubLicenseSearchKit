@@ -6,6 +6,8 @@ Search the license for a given GitHub repository.
 let repos = try await LicenseSearcher().search(repoName: "GitHubLicenseSearchKit")
 print(repos.items.map { $0.license!.name }.first!) // MIT License
 ```
+## Requirement
+Xcode 13.3+
 
 ## Install
 ```swift
